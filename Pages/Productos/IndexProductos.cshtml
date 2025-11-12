@@ -18,39 +18,41 @@ else if(Model.ListaProductos.Count == 0)
 }
 else
 {
-	<a asp-page="CreateProducto" class="btn btn-success mb-3">Agregar Producto</a>
+	<div class="container">
+		<a asp-page="CreateProducto" class="btn btn-success mb-3">Agregar Producto</a>
 
-	<table class="table">
-		<thead>
-			<tr>
-				<th>Marca</th>
-				<th>Tipo de producto</th>
-				<th>Precio</th>
-				<th>Cantidad</th>
-				<th>Categoría</th>
-				<th>Subtotal</th>
-				<th>Acciones</th>
-			</tr>
-		</thead>
-		<tbody>
-			@foreach(var producto in Model.ListaProductos)
-			{
+		<table class="table">
+			<thead>
 				<tr>
-					<td>@producto.MarcaNombre</td>
-					<td>@producto.Tipo</td>
-					<td>@producto.Precio.ToString("C")</td>
-					<td>@producto.Cantidad</td>
-					<td>@Model.CategoriasNombres[producto.IdCategoria]</td>
-					<td>@((producto.Precio * producto.Cantidad).ToString("C"))</td>
-					<td>
-						<a asp-page="EditProducto" asp-route-id="@producto.Id" class="btn btn-primary btn-sm">Editar</a>
-						<a asp-page="DeleteProducto" asp-route-id="@producto.Id" class="btn btn-danger btn-sm">Eliminar</a>
-					</td>
+					<th>Marca</th>
+					<th>Tipo de producto</th>
+					<th>Precio</th>
+					<th>Cantidad</th>
+					<th>Categoría</th>
+					<th>Subtotal</th>
+					<th>Acciones</th>
 				</tr>
-			}
-		</tbody>
-	</table>
-	<div class="text-end mt-2">
-		<strong>Total estimado: @Model.TotalGeneral.ToString("C")</strong>
+			</thead>
+			<tbody>
+				@foreach (var producto in Model.ListaProductos)
+				{
+					<tr>
+						<td>@producto.MarcaNombre</td>
+						<td>@producto.Tipo</td>
+						<td>@producto.Precio.ToString("C")</td>
+						<td>@producto.Cantidad</td>
+						<td>@Model.CategoriasNombres[producto.IdCategoria]</td>
+						<td>@((producto.Precio * producto.Cantidad).ToString("C"))</td>
+						<td>
+							<a asp-page="EditProducto" asp-route-id="@producto.Id" class="btn btn-primary btn-sm">Editar</a>
+							<a asp-page="DeleteProducto" asp-route-id="@producto.Id" class="btn btn-danger btn-sm">Eliminar</a>
+						</td>
+					</tr>
+				}
+			</tbody>
+		</table>
+		<div class="text-end mt-2">
+			<strong>Total estimado: @Model.TotalGeneral.ToString("C")</strong>
+		</div>
 	</div>
 }

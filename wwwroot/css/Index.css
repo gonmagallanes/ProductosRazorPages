@@ -22,6 +22,10 @@
     justify-content: space-around;
 }
 
+#h1titulodiv {
+    padding-top: 10px;
+}
+
 .cardBody {
     display: flex;
     flex-direction: column;
