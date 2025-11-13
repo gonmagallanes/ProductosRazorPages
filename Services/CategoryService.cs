@@ -24,7 +24,7 @@ namespace ThreeYellowDucks.Services
 		{
 			var categories = _categoryRepository.GetAll();
 
-			if (categories.Any(c => c.NombreCategoria.ToLower() == category.NombreCategoria.ToLower())) 
+			if (categories.Any(c => c.NombreCategoria.ToLower().Trim() == category.NombreCategoria.ToLower().Trim())) 
 			{
 				return false;
 			}
