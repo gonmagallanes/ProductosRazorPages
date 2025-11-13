@@ -37,9 +37,30 @@
     margin: 20px;
     height: 250px;
     width: 400px;
+    transition: linear 0.2s;
 }
 
-.cardTitle{
+#cardArticulo {
+    background-image: url('/images/PatitoCargandoOpacidad.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#cardCostos {
+    background-image: url('/images/PatitoPensanteOpaco.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.cardBody:hover {
+    transform: scale(1.03);
+    transition: linear 0.2s;
+}
+
+.cardTitle {
+    position: relative;
     text-align: center;
     font-size: 1.5rem;
     font-weight: bold;
@@ -49,4 +70,22 @@
     font-size: 1.2rem;
     font-weight: 300;
     padding: 0 15px;
+}
+
+.wiggle {
+    animation: wiggle 0.5s ease-in-out;
+}
+
+@keyframes wiggle {
+    0%, 100% {
+        transform: rotate(0);
+    }
+
+    25% {
+        transform: rotate(5deg);
+    }
+
+    75% {
+        transform: rotate(-5deg);
+    }
 }
