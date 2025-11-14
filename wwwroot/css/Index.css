@@ -20,6 +20,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+   
 }
 
 #h1titulodiv {
@@ -35,20 +36,20 @@
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin: 20px;
-    height: 250px;
+    height: 70vh;
     width: 400px;
     transition: linear 0.2s;
 }
 
 #cardArticulo {
-    background-image: url('/images/PatitoCargandoOpacidad.jpg');
+    background-image: url('/images/Categorias.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 #cardCostos {
-    background-image: url('/images/PatitoPensanteOpaco.jpg');
+    background-image: url('/images/Costos.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -63,12 +64,13 @@
     position: relative;
     text-align: center;
     font-size: 1.5rem;
-    font-weight: bold;
+    font-weight: bolder;
+    font-weight: 900;
 }
 .cardDescription {
     text-align: center;
     font-size: 1.2rem;
-    font-weight: 300;
+    font-weight: 900;
     padding: 0 15px;
 }
 
