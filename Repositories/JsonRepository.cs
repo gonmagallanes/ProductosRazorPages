@@ -1,7 +1,7 @@
-﻿using ThreeYellowDucks.AccesoDatos;
-using ThreeYellowDucks.Models;
+﻿using ProductosRazor.AccesoDatos;
+using ProductosRazor.Models;
 
-namespace ThreeYellowDucks.Repositories
+namespace ProductosRazor.Repositories
 {
 	public class JsonRepository <T> : IRepository<T> where T : class, IIdentificable
 	{

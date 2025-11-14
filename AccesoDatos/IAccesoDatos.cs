@@ -1,4 +1,4 @@
-﻿namespace ThreeYellowDucks.AccesoDatos
+﻿namespace ProductosRazor.AccesoDatos
 {
 	public interface IAccesoDatos<T>
 	{

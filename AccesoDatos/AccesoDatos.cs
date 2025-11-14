@@ -1,6 +1,6 @@
 ﻿using System.Text.Json;
 
-namespace ThreeYellowDucks.AccesoDatos
+namespace ProductosRazor.AccesoDatos
 {
 	public class AccesoDatos<T> : IAccesoDatos<T>
 	{

@@ -1,4 +1,4 @@
-﻿namespace ThreeYellowDucks.Models
+﻿namespace ProductosRazor.Models
 {
 	public interface IIdentificable
 	{

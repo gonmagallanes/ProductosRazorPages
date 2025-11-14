@@ -1,7 +1,7 @@
-﻿using ThreeYellowDucks.Models;
-using ThreeYellowDucks.Repositories;
+﻿using ProductosRazor.Models;
+using ProductosRazor.Repositories;
 
-namespace ThreeYellowDucks.Services
+namespace ProductosRazor.Services
 {
 	public class ProductService
 	{

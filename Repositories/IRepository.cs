@@ -1,4 +1,4 @@
-﻿namespace ThreeYellowDucks.Repositories
+﻿namespace ProductosRazor.Repositories
 {
 	public interface IRepository<T>
 	{

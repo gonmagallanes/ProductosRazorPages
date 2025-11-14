@@ -1,11 +1,11 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using ThreeYellowDucks.AccesoDatos;
-using ThreeYellowDucks.Models;
-using ThreeYellowDucks.Repositories;
-using ThreeYellowDucks.Services;
+using ProductosRazor.AccesoDatos;
+using ProductosRazor.Models;
+using ProductosRazor.Repositories;
+using ProductosRazor.Services;
 
-namespace ThreeYellowDucks.Pages.Categorias
+namespace ProductosRazor.Pages.Categorias
 {
     public class CreateCategoriaModel : PageModel
     {

@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace ThreeYellowDucks.Pages
+namespace ProductosRazor.Pages
 {
     public class PrivacyModel : PageModel
     {

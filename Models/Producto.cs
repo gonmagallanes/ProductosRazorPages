@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace ThreeYellowDucks.Models
+namespace ProductosRazor.Models
 {
 	public class Producto : IIdentificable
 	{
