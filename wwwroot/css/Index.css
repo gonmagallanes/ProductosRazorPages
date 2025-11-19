@@ -1,21 +1,6 @@
 ﻿body {
 }
 
-#titulodiv {
-    position: relative;
-    background-image: url('/images/PatitosIndexImagen.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 90vh;
-    width: stretch;
-}
-
-#tituloEnca {
-    background-color: #fff7e0;
-    padding: 20px;
-}
-
 .cardSection {
     display: flex;
     flex-direction: row;
@@ -23,9 +8,6 @@
    
 }
 
-#h1titulodiv {
-    padding-top: 10px;
-}
 
 .cardBody {
     display: flex;
@@ -74,20 +56,3 @@
     padding: 0 15px;
 }
 
-.wiggle {
-    animation: wiggle 0.5s ease-in-out;
-}
-
-@keyframes wiggle {
-    0%, 100% {
-        transform: rotate(0);
-    }
-
-    25% {
-        transform: rotate(5deg);
-    }
-
-    75% {
-        transform: rotate(-5deg);
-    }
-}
